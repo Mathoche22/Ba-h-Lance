@@ -2664,6 +2664,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7555565260c37cf4bafe856e2dbfe83a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gravity: 0
+  speed: 0
+  rotationspeed: 0
+  feet: {fileID: 0}
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!143 &1697732911
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3302,7 +3309,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1399833686816464859, guid: 9ea6d23704828f04bbe30fac70f57ca1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.07
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 1399833686816464859, guid: 9ea6d23704828f04bbe30fac70f57ca1, type: 3}
       propertyPath: m_LocalPosition.y

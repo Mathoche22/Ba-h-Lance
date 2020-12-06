@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //categories in the inspector
+    [Header("physics")]
+    [SerializeField] private float gravity;
+    [Header("player")]
+    [SerializeField] private float speed;
+    [SerializeField] private float rotationspeed;
+    [SerializeField] private Transform feet;
+    [SerializeField] private LayerMask raycastMask;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private CharacterController controller;
+    private PlayerControls PlayerControls;
+    private Vector2 stickDirection;
+    private Vector3 direction3D;
+    private Vector3 totalMovement;
+
+
 }
