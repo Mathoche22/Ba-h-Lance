@@ -24,6 +24,7 @@ public class PlayerMove : MonoBehaviour
     private void OnEnable()
     {
         controls = new PlayerControls();
+        controls.Enable();
         controls.Player.Move.performed += OnMovePerformed;
         controls.Player.Move.canceled += OnMoveCanceled;
 
