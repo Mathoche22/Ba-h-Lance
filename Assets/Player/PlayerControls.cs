@@ -171,7 +171,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": ""down"",
                     ""id"": ""145b2ea9-3244-47ba-abb7-a1d0763827e8"",
-                    ""path"": ""<Keyboard>/x"",
+                    ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
