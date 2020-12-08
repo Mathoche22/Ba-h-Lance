@@ -24,7 +24,7 @@ public class Shooting : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(tpsCam.transform.position, tpsCam.transform.forward, out hit, range))
         {
-            Debug.Log(hit.transform.name)
+            Debug.Log(hit.transform.name);
         }
     }
 }
