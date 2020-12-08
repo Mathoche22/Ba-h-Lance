@@ -8,7 +8,7 @@ public class Shooting : MonoBehaviour
     public float healing= 10f;
     public float range =100f;
 
-    public Camera fpsCam;
+    public Camera tpsCam;
 
     // Update is called once per frame
     void Update()
@@ -22,9 +22,9 @@ public class Shooting : MonoBehaviour
     void Shoot()
     {
         RaycastHit hit;
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        if (Physics.Raycast(tpsCam.transform.position, tpsCam.transform.forward, out hit, range))
         {
-
+            Debug.Log(hit.transform.name)
         }
     }
 }
