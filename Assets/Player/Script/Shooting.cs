@@ -23,6 +23,7 @@ public class Shooting : MonoBehaviour
 
     private void OnShootPerformed(InputAction.CallbackContext obj)
     {
+        Debug.Log("Shooting");
         //RaycastHit hit;
         //if (Physics.Raycast(tpsCam.transform.position, tpsCam.transform.forward, out hit, range))
         //{
