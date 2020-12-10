@@ -10,21 +10,28 @@ public class Shooting : MonoBehaviour
 
     public Camera tpsCam;
 
-    // Update is called once per frame
-    void Update()
+    private PlayerControls controls;
+
+    private void OnEnable()
     {
-        if(Input.GetButtonDown("Fire1"))
-        {
-            Shoot();
-        }
+        controls = new PlayerControls();
+        controls.Enable();
+        controls.Player.Shoot.performed += OnShootPerformed;
+        controls.Player.Shoot.canceled += OnShootCanceled;
+
     }
 
-    void Shoot()
+    private void OnShootPerformed(InputAction.CallbackContext obj)
     {
-        RaycastHit hit;
-        if (Physics.Raycast(tpsCam.transform.position, tpsCam.transform.forward, out hit, range))
-        {
-            Debug.Log(hit.transform.name);
-        }
+        //RaycastHit hit;
+        //if (Physics.Raycast(tpsCam.transform.position, tpsCam.transform.forward, out hit, range))
+        //{
+            //Debug.Log(hit.transform.name);
+        //}
+    }
+
+        private void OnShootCanceled(InputAction.CallbackContext obj)
+    {
+        
     }
 }
