@@ -12,6 +12,8 @@ public class Shooting : MonoBehaviour
     public CharacterController controller;
     private PlayerControls controls;
 
+    private Vector3 shooting;
+
     private void OnEnable()
     {
         controls = new PlayerControls();
@@ -37,9 +39,14 @@ public class Shooting : MonoBehaviour
 
     }
 
-    void Statr()
+    /*void Update()
     {
-        controller = GetComponent<CharacterController>();
-        mainCam = Camera.main;
-    }
+        shooting = ApplyShoot();
+
+    }*/
+
+    /*private Vector3 ApplyShoot()
+    {
+        
+    }*/
 }

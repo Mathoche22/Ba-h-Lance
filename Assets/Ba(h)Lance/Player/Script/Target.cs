@@ -19,6 +19,7 @@ public class Target : MonoBehaviour
     void healMe()
     {
         Debug.Log("You Dit it");
+        Destroy(gameObject);
         
     }
     
