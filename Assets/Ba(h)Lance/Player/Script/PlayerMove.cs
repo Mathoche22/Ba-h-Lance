@@ -13,12 +13,12 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private Transform feet;
     [SerializeField] private LayerMask raycastMask;
 
-    private CharacterController controller;
+    public CharacterController controller;
     private PlayerControls controls;
     private Vector2 stickDirection;
     private Vector3 direction3D;
     private Vector3 totalMovement;
-    private Camera mainCam;
+    public Camera mainCam;
 
     //create the movement functions for the player
     private void OnEnable()

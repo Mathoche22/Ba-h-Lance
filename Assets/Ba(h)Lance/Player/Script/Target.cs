@@ -5,15 +5,21 @@ using UnityEngine.InputSystem;
 
 public class Target : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float health = 50f;
+
+    public void TakeDamage(float amount)
     {
-        
+        health -= amount;
+        if(health<=0f)
+        {
+            healMe();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void healMe()
     {
+        Debug.Log("You Dit it");
         
     }
+    
 }
