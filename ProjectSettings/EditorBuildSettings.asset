@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Ba(h)Lance/Menu/Menu.unity
     guid: 5643b9c0b8d8d45449905301e05324a5
   - enabled: 1
-    path: Assets/Ba(h)Lance/Scenes/Play.unity
+    path: Assets/Ba(h)Lance/Player/Play.unity
     guid: 45b8a637d8881244497a422918a30c05
   - enabled: 1
     path: Assets/Ba(h)Lance/Scenes/Credits.unity

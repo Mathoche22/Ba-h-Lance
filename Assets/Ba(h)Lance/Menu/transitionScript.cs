@@ -15,10 +15,11 @@ public class transitionScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +2);
     }
 
-    public void BackButton()
+    public void QuitButton()
     {
         Debug.Log("Quitting...");
         Application.Quit();
 
     }
+
 }
