@@ -17,6 +17,8 @@ public class transitionScript : MonoBehaviour
 
     public void BackButton()
     {
+        Debug.Log("Quitting...");
+        Application.Quit();
 
     }
 }
