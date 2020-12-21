@@ -12,7 +12,7 @@ public class transitionScript : MonoBehaviour
 
     public void CreditsButton()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +2);
     }
 
     public void BackButton()
