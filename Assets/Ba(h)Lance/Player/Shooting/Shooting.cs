@@ -19,8 +19,6 @@ public class Shooting : MonoBehaviour
         controls = new PlayerControls();
         controls.Enable();
         controls.Player.Shoot.performed += OnShootPerformed;
-        controls.Player.Shoot.canceled += OnShootCanceled;
-
     }
 
     void OnShootPerformed(InputAction.CallbackContext obj)
@@ -33,20 +31,14 @@ public class Shooting : MonoBehaviour
         }
     }
 
-    void OnShootCanceled(InputAction.CallbackContext obj)
-    {
-        
-
-    }
-
-    /*void Update()
+    void Update()
     {
         shooting = ApplyShoot();
 
-    }*/
+    }
 
-    /*private Vector3 ApplyShoot()
+    private Vector3 ApplyShoot()
     {
-        
-    }*/
+        Destroy(gameObject);
+    }
 }
