@@ -31,14 +31,4 @@ public class Shooting : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        shooting = ApplyShoot();
-
-    }
-
-    private Vector3 ApplyShoot()
-    {
-        Destroy(gameObject);
-    }
 }
