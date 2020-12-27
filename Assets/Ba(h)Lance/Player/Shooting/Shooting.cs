@@ -13,6 +13,8 @@ public class Shooting : MonoBehaviour
     public CharacterController controller;
     private PlayerControls controls;
 
+    [SerializeField] private LayerMask playerMask;
+
     private void OnEnable()
     {
         controls = new PlayerControls();
@@ -25,11 +27,19 @@ public class Shooting : MonoBehaviour
         //Debug.Log("Shooting");
         muzzleFlash.Play();
         RaycastHit hit;
-        if (Physics.Raycast(mainCam.transform.position, mainCam.transform.forward, out hit, range))
+        if (Physics.Raycast(mainCam.transform.position, mainCam.transform.forward, out hit, range, playerMask))
         {
             Debug.Log(hit.transform.name);
+            //destroy the aimed object
+            Destroy(hit.transform.gameObject);
+            //hit.transform.GetComponent<MeshRenderer>().material=// add new material - 2ème texture
         }
     
     }
 
+    void Update()
+    {
+        Debug.Log("Working");
+        Debug.DrawRay(mainCam.transform.position, mainCam.transform.forward*range);
+    }
 }
