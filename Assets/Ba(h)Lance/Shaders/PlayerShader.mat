@@ -37,7 +37,7 @@ Material:
     - Vector1_83E8F69E: 3.78
     - Vector1_B323BFF2: 300
     m_Colors:
-    - Color_232DD4DF: {r: 0.025490196, g: 0.1, b: 0.01372549, a: 1}
+    - Color_232DD4DF: {r: 0, g: 0, b: 0, a: 1}
     - Vector2_21C0193B: {r: 0.01, g: 0, b: 0, a: 0}
     - Vector2_9D704D7F: {r: 0, g: 0.01, b: 0, a: 0}
   m_BuildTextureStacks: []
