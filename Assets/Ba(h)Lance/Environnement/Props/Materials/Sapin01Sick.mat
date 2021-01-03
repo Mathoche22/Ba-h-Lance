@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sapin01
+  m_Name: Sapin01Sick
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ShaderKeywords: _METALLICSPECGLOSSMAP _NORMALMAP _OCCLUSIONMAP _SPECULAR_SETUP
   m_LightmapFlags: 4
@@ -34,11 +34,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 3ba159cd12ed40d47ad68c81f05e5d93, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2b586daf564981d4ea5bb2ddb5a2f391, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: fb27e901b193e1e4da3b80d063ff7a23, type: 3}
+        m_Texture: {fileID: 2800000, guid: be007d8bd14e22d49b7858149f408b92, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -46,7 +46,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3ba159cd12ed40d47ad68c81f05e5d93, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2b586daf564981d4ea5bb2ddb5a2f391, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -54,11 +54,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 1097da6c47805f041b8e385677d93370, type: 3}
+        m_Texture: {fileID: 2800000, guid: 51d85b868b8997b49a698e37a6ddb768, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
-        m_Texture: {fileID: 2800000, guid: 9d1bba62980bb2e4da5dd9257bc91e7d, type: 3}
+        m_Texture: {fileID: 2800000, guid: a2c8fda1dc0f1594d996c23223d17b89, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
