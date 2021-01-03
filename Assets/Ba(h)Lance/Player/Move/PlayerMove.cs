@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerMove : MonoBehaviour
 {
     [Header("Physics")]
-    //[SerializeField] private float gravity;
+    [SerializeField] private float gravity;
     [SerializeField] private float speed;
     [SerializeField] private float rotationSpeed;
     [SerializeField] private Transform feet;
@@ -55,7 +55,7 @@ public class PlayerMove : MonoBehaviour
     //get the player global moves
     void Update()
     {
-        totalMovement = ApplyMove(); //+ ApplyGravity();
+        totalMovement = ApplyMove() + ApplyGravity();
         controller.Move(totalMovement*Time.deltaTime);
     }
 
@@ -78,7 +78,7 @@ public class PlayerMove : MonoBehaviour
         return moveDirection.normalized * speed;
     }
 
-    /*private Vector3 ApplyGravity()
+    private Vector3 ApplyGravity()
     {
         var StartRaycastPos = feet.position;
         var raycast = Physics.Raycast(StartRaycastPos, Vector3.down, 0.1f, raycastMask);
@@ -96,5 +96,5 @@ public class PlayerMove : MonoBehaviour
         }
 
         return directionToFall;
-    }*/
+    }
 }
