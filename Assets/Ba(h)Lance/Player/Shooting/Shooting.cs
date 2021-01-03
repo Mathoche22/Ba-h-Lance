@@ -13,7 +13,11 @@ public class Shooting : MonoBehaviour
     public CharacterController controller;
     private PlayerControls controls;
 
+    [SerializeField] private Material NewMaterial;
+
     [SerializeField] private LayerMask playerMask;
+
+    public Material NewMaterial1 { get => NewMaterial; set => NewMaterial = value; }
 
     private void OnEnable()
     {
@@ -32,7 +36,7 @@ public class Shooting : MonoBehaviour
             Debug.Log(hit.transform.name);
             //destroy the aimed object
             Destroy(hit.transform.gameObject);
-            //hit.transform.GetComponent<MeshRenderer>().material=// add new material - 2ème texture
+            hit.transform.GetComponent<MeshRenderer>().material=NewMaterial;// add new material - 2ème texture
         }
     
     }
