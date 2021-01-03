@@ -13,7 +13,7 @@ public class Shooting : MonoBehaviour
     public CharacterController controller;
     private PlayerControls controls;
 
-    [SerializeField] private Material NewMaterial;
+    //[SerializeField] private Material NewMaterial;
 
     [SerializeField] private LayerMask playerMask;
 
