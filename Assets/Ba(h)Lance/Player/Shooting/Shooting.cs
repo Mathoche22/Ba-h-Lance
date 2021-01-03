@@ -5,17 +5,18 @@ using UnityEngine.InputSystem;
 
 public class Shooting : MonoBehaviour
 {
+    
+    [SerializeField] private Material NewMaterial;
+    [SerializeField] private LayerMask playerMask;
     public float healing= 10f;
     public float range =100f;
-
-    public ParticleSystem muzzleFlash;
     public Camera mainCam;
     public CharacterController controller;
     private PlayerControls controls;
+    public ParticleSystem muzzleFlash;
+    public GameObject hitEffect;
 
-    //[SerializeField] private Material NewMaterial;
-
-    [SerializeField] private LayerMask playerMask;
+    
 
     private void OnEnable()
     {
@@ -26,7 +27,7 @@ public class Shooting : MonoBehaviour
 
     void OnShootPerformed(InputAction.CallbackContext obj)
     {
-        //Debug.Log("Shooting");
+        Debug.Log("Shooting");
         muzzleFlash.Play();
         RaycastHit hit;
         if (Physics.Raycast(mainCam.transform.position, mainCam.transform.forward, out hit, range, playerMask))
@@ -34,14 +35,16 @@ public class Shooting : MonoBehaviour
             Debug.Log(hit.transform.name);
             //destroy the aimed object
             //Destroy(hit.transform.gameObject);
-            //hit.transform.GetComponent<MeshRenderer>().material=NewMaterial;// add new material - 2ème texture
+            // change material
+            hit.transform.GetComponent<MeshRenderer>().material=NewMaterial;
+            Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
         }
     
     }
 
     void Update()
     {
-        Debug.Log("Working");
-        //Debug.DrawRay(mainCam.transform.position, mainCam.transform.forward*range);
+        //Debug.Log("Working");
+        Debug.DrawRay(mainCam.transform.position, mainCam.transform.forward*range);
     }
 }

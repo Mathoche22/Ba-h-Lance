@@ -11,14 +11,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Ba(h)Lance/Player/Play.unity
     guid: 45b8a637d8881244497a422918a30c05
-  - enabled: 1
-    path: Assets/Ba(h)Lance/Scenes/Credits.unity
-    guid: 22d0a457f4f938c43890beedbccb25eb
-  - enabled: 1
-    path: Assets/Ba(h)Lance/YouWon!/YouWon!.unity
-    guid: cda22e1f1d9dc194888c6fd2dd92906f
-  - enabled: 1
-    path: Assets/Ba(h)Lance/GameOver/GameOver.unity
-    guid: 4b77658eec7886d46bdc25e2b262860c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: c7fca834be821494681472cfbf651a5c, type: 2}
