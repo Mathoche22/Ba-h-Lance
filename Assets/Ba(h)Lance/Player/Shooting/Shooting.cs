@@ -45,6 +45,7 @@ public class Shooting : MonoBehaviour
     void Update()
     {
         //Debug.Log("Working");
+        //ray in the scene that comes from the cam
         Debug.DrawRay(mainCam.transform.position, mainCam.transform.forward*range);
     }
 }
