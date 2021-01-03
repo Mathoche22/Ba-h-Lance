@@ -17,8 +17,6 @@ public class Shooting : MonoBehaviour
 
     [SerializeField] private LayerMask playerMask;
 
-    public Material NewMaterial1 { get => NewMaterial; set => NewMaterial = value; }
-
     private void OnEnable()
     {
         controls = new PlayerControls();
@@ -35,8 +33,8 @@ public class Shooting : MonoBehaviour
         {
             Debug.Log(hit.transform.name);
             //destroy the aimed object
-            Destroy(hit.transform.gameObject);
-            hit.transform.GetComponent<MeshRenderer>().material=NewMaterial;// add new material - 2ème texture
+            //Destroy(hit.transform.gameObject);
+            //hit.transform.GetComponent<MeshRenderer>().material=NewMaterial;// add new material - 2ème texture
         }
     
     }
@@ -44,6 +42,6 @@ public class Shooting : MonoBehaviour
     void Update()
     {
         Debug.Log("Working");
-        Debug.DrawRay(mainCam.transform.position, mainCam.transform.forward*range);
+        //Debug.DrawRay(mainCam.transform.position, mainCam.transform.forward*range);
     }
 }
