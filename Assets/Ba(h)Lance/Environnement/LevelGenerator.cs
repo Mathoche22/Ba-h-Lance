@@ -11,9 +11,4 @@ public class LevelGenerator : MonoBehaviour
         Instantiate(objects[rand], transform.position, Quaternion.identity);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
