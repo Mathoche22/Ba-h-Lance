@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 7342178971256794879}
   - component: {fileID: 5929960100139999578}
   - component: {fileID: 8480141772302144912}
-  m_Layer: 0
+  - component: {fileID: -2449847955745211482}
+  m_Layer: 10
   m_Name: Prop_Sapin_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-2449847955745211482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7975725901112079429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d06714529a056dd4b85447f5a0ba65be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50

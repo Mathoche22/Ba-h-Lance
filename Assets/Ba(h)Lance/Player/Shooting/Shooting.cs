@@ -14,9 +14,6 @@ public class Shooting : MonoBehaviour
     public CharacterController controller;
     private PlayerControls controls;
     public ParticleSystem muzzleFlash;
-    public GameObject hitEffect;
-
-    
 
     private void OnEnable()
     {
@@ -27,17 +24,16 @@ public class Shooting : MonoBehaviour
 
     void OnShootPerformed(InputAction.CallbackContext obj)
     {
-        Debug.Log("Shooting");
+        //Debug.Log("Shooting");
         muzzleFlash.Play();
         RaycastHit hit;
-        if (Physics.Raycast(mainCam.transform.position, mainCam.transform.forward, out hit, range, playerMask))
+        if (Physics.Raycast(mainCam.transform.position, mainCam.transform.forward, out hit, playerMask))
         {
             Debug.Log(hit.transform.name);
             //destroy the aimed object
             //Destroy(hit.transform.gameObject);
             // change material
             hit.transform.GetComponent<MeshRenderer>().material=NewMaterial;
-            Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
         }
     
     }

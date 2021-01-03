@@ -12,4 +12,4 @@ EditorBuildSettings:
     path: Assets/Ba(h)Lance/Player/Play.unity
     guid: 45b8a637d8881244497a422918a30c05
   m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: c7fca834be821494681472cfbf651a5c, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 9fda759b2f89b704b9212f14689d4ce9, type: 2}
